@@ -62,8 +62,8 @@ function clickedButton(){
 */
 
 function changeColorMode(){
-  if (toggle.classList.add("darkMode") === false) {
-    overallBody.classList.add("darkMode")''
+  if (toggle.classList.contains("darkMode") === false) {
+    overallBody.classList.remove("darkMode");
   } else {
       overallBody.classList.add("darkMode");
   }
