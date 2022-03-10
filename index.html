@@ -54,15 +54,20 @@
 
 var toggle = document.getElementById("toggleButton");
 var overallBody = document.getElementById("overallBody");
-
+/*
 var clickCount = 0;
 function clickedButton(){
   clickCount = clickCount + 1;
   alert("I've been clicked " + clickCount);
+*/
 
 function changeColorMode(){
-  overallBody.classList.add("darkMode");
-}
+  if (toggle.classList.add("darkMode") === false) {
+    overallBody.classList.add("darkMode")''
+  } else {
+      overallBody.classList.add("darkMode");
+  }
+
 
 toggle.onclick = changeColorMode;
 
