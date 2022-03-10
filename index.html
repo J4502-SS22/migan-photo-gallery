@@ -52,7 +52,9 @@
 <script type="text/javascript">
 "use strict"
 var toggle = document.getElementById("toggleButton");
+var clickCount = 0;
 function clickedButton(){
+  clickCount = clickCount + 1;
   alert("I've been clicked!");
 }
 </script>
